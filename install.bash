@@ -1,5 +1,7 @@
 
 
+echo "kernel: https://github.com/torvalds/linux.git"
+
 sudo snap install clion --classic
 sudo snap install pycharm-professional --classic
 
