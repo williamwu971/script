@@ -6,8 +6,9 @@ sudo snap install clion --classic
 sudo snap install pycharm-professional --classic
 
 sudo apt update
+sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt install -y git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison \
-  clang libopenmpi-dev python-is-python3 python3-pip apt-file nvidia-cuda-dev wget gcc g++ gdb libglvnd-dev pkg-config
+  clang libopenmpi-dev python-is-python3 python3-pip apt-file nvidia-cuda-dev wget gcc g++ gdb libglvnd-dev pkg-config nvidia-driver-470
 
 git config --global user.email "xiwu9085@gmail.com"
 git config --global user.name "William"
