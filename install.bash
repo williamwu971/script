@@ -8,3 +8,4 @@ git config --global user.name "William"
 git config --global credential.helper store
 sed -i 's/@\\h//g' ~/.bashrc
 sed -i 's/\\w/\\W/g' ~/.bashrc
+
