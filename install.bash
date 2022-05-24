@@ -24,4 +24,5 @@ sed -i 's/\\w/\\W/g' ~/.bashrc
 sudo rm /usr/local/bin/ubuntu-mainline-kernel.sh
 wget https://raw.githubusercontent.com/pimlie/ubuntu-mainline-kernel.sh/master/ubuntu-mainline-kernel.sh
 chmod +x ubuntu-mainline-kernel.sh
+./ubuntu-mainline-kernel.sh -c
 sudo mv ubuntu-mainline-kernel.sh /usr/local/bin/
