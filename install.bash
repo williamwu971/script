@@ -6,4 +6,5 @@ sudo apt install -y git fakeroot build-essential ncurses-dev xz-utils libssl-dev
 git config --global user.email "xiwu9085@gmail.com"
 git config --global user.name "William"
 git config --global credential.helper store
-
+sed -i 's/@\\h//g' ~/.bashrc
+sed -i 's/\\w/\\W/g' ~/.bashrc
