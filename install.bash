@@ -6,7 +6,7 @@ sudo snap install clion --classic
 sudo snap install pycharm-professional --classic
 
 sudo apt install -y git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison \
-  clang libopenmpi-dev python-is-python3 python3-pip apt-file
+  clang libopenmpi-dev python-is-python3 python3-pip apt-file nvidia-cuda-dev
 
 sudo apt-file update
 
