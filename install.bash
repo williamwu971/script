@@ -7,12 +7,12 @@ sudo snap install clion --classic
 sudo snap install pycharm-professional --classic
 
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -y
 sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo ubuntu-drivers autoinstall
 sudo apt install -y git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison \
   clang libopenmpi-dev python-is-python3 python3-pip apt-file nvidia-cuda-dev wget gcc g++ gdb \
-  libglvnd-dev pkg-config
+  libglvnd-dev pkg-config cowsay libaa-bin htop
 sudo apt autoremove -y
 
 git config --global user.email "xiwu9085@gmail.com"
