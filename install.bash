@@ -12,8 +12,10 @@ sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo ubuntu-drivers autoinstall
 sudo apt install -y git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison \
   clang libopenmpi-dev python-is-python3 python3-pip apt-file nvidia-cuda-dev wget gcc g++ gdb \
-  libglvnd-dev pkg-config cowsay libaa-bin htop
+  libglvnd-dev pkg-config cowsay libaa-bin htop chromium-chromedriver python3-selenium
 sudo apt autoremove -y
+
+pip install selenium
 
 git config --global user.email "xiwu9085@gmail.com"
 git config --global user.name "William"
