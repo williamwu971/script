@@ -29,3 +29,4 @@ wget https://raw.githubusercontent.com/pimlie/ubuntu-mainline-kernel.sh/master/u
 chmod +x ubuntu-mainline-kernel.sh
 ./ubuntu-mainline-kernel.sh -c
 sudo mv ubuntu-mainline-kernel.sh /usr/local/bin/
+sudo cp ht /usr/local/bin/
