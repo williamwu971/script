@@ -15,7 +15,7 @@ sudo apt install -y git fakeroot build-essential ncurses-dev xz-utils libssl-dev
   libglvnd-dev pkg-config cowsay libaa-bin htop chromium-chromedriver python3-selenium lm-sensors
 sudo apt autoremove -y
 
-pip install selenium
+#pip install selenium
 
 git config --global user.email "xiwu9085@gmail.com"
 git config --global user.name "William"
