@@ -31,3 +31,17 @@ chmod +x ubuntu-mainline-kernel.sh
 ./ubuntu-mainline-kernel.sh -c
 sudo mv ubuntu-mainline-kernel.sh /usr/local/bin/
 sudo cp ht /usr/local/bin/
+
+if [ ! -f "$HOME/.bash_aliases" ]; then
+  touch "$HOME/.bash_aliases"
+fi
+
+if ! grep -q labos "$HOME/.bash_aliases"; then
+  cp labos.expect "$HOME"/.labos.expect
+  echo "alias labos='expect $HOME/.labos.expect'" >>"$HOME/.bash_aliases"
+fi
+
+if ! grep -q labos2 "$HOME/.bash_aliases"; then
+  cp labos2.expect "$HOME"/.labos2.expect
+  echo "alias labos2='expect $HOME/.labos2.expect'" >>"$HOME/.bash_aliases"
+fi
