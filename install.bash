@@ -13,7 +13,7 @@ sudo ubuntu-drivers autoinstall
 sudo apt install -y git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison \
   clang libopenmpi-dev python-is-python3 python3-pip apt-file nvidia-cuda-dev wget gcc g++ gdb \
   libglvnd-dev pkg-config cowsay libaa-bin htop chromium-chromedriver python3-selenium lm-sensors intel-gpu-tools \
-  nvidia-cuda-toolkit vim
+  nvidia-cuda-toolkit vim expect
 sudo apt autoremove -y
 
 #pip install selenium

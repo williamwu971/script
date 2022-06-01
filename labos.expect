@@ -1,0 +1,7 @@
+set timeout -1
+spawn ssh xiaoxiang@labos.cs.usyd.edu.au
+expect "*?assword*"
+send -- "pmem\r"
+expect "*?assword*"
+send -- "pmem\r"
+interact
