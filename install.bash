@@ -13,7 +13,8 @@ sudo ubuntu-drivers autoinstall
 sudo apt install -y git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison \
   clang libopenmpi-dev python-is-python3 python3-pip apt-file nvidia-cuda-dev wget gcc g++ gdb libpmem-dev \
   libglvnd-dev pkg-config cowsay libaa-bin htop chromium-chromedriver python3-selenium lm-sensors intel-gpu-tools \
-  nvidia-cuda-toolkit vim expect cmake libboost-all-dev libpapi-dev default-jdk libtbb-dev libjemalloc-dev
+  nvidia-cuda-toolkit vim expect cmake libboost-all-dev libpapi-dev default-jdk libtbb-dev libjemalloc-dev \
+  nvidia-driver-515
 sudo apt autoremove -y
 
 #pip install selenium
@@ -25,12 +26,14 @@ git config --global credential.helper store
 sed -i 's/@\\h//g' ~/.bashrc
 sed -i 's/\\w/\\W/g' ~/.bashrc
 
-sudo rm /usr/local/bin/ubuntu-mainline-kernel.sh
-wget https://raw.githubusercontent.com/pimlie/ubuntu-mainline-kernel.sh/master/ubuntu-mainline-kernel.sh
-chmod +x ubuntu-mainline-kernel.sh
-./ubuntu-mainline-kernel.sh -c
-sudo mv ubuntu-mainline-kernel.sh /usr/local/bin/
-sudo cp ht /usr/local/bin/
+sudo rm -f /usr/local/bin/ubuntu-mainline-kernel.sh
+#wget https://raw.githubusercontent.com/pimlie/ubuntu-mainline-kernel.sh/master/ubuntu-mainline-kernel.sh
+#chmod +x ubuntu-mainline-kernel.sh
+#./ubuntu-mainline-kernel.sh -c
+#sudo mv ubuntu-mainline-kernel.sh /usr/local/bin/
+
+sudo rm -f /usr/local/bin/ht
+#sudo cp ht /usr/local/bin/
 
 if [ ! -f "$HOME/.bash_aliases" ]; then
   touch "$HOME/.bash_aliases"
